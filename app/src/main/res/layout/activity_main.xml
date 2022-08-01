@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_E6F1FF"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/main_rl_container"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/tv_set_num"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="设置车牌号"
+            android:layout_margin="5dp"
+            android:background="@color/color_9e9e9e"
+            android:gravity="center"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp">
+            <com.example.customcarkeyboard.CustomCarNumberKeyboard
+                android:id="@+id/activity_keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp" />
+            <RelativeLayout
+                android:id="@+id/rl_new_power"
+                android:layout_toRightOf="@+id/activity_keyboard"
+                android:layout_width="36dp"
+                android:background="@drawable/car_number_bg_blue"
+                android:layout_marginHorizontal="2dp"
+                android:gravity="center"
+                android:layout_height="51dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="新能源"
+                        android:textColor="@color/color_00AB77"
+                        android:textSize="10sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

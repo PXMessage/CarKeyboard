@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/item_code_iv1"
+            style="@style/license_plate_editStyle"
+            android:background="@drawable/car_number_bg"/>
+
+        <EditText
+            android:id="@+id/item_code_iv2"
+            style="@style/license_plate_editStyle"
+            android:background="@drawable/car_number_bg"/>
+        <RelativeLayout
+            android:layout_width="10dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/icon_spot"/>
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/item_code_iv3"
+            style="@style/license_plate_editStyle"
+            android:background="@drawable/car_number_bg"/>
+
+        <EditText
+            android:id="@+id/item_code_iv4"
+            style="@style/license_plate_editStyle"
+            android:background="@drawable/car_number_bg"/>
+
+        <EditText
+            android:id="@+id/item_code_iv5"
+            style="@style/license_plate_editStyle"
+            android:background="@drawable/car_number_bg"/>
+
+
+        <EditText
+            android:id="@+id/item_code_iv6"
+            style="@style/license_plate_editStyle"
+            android:background="@drawable/car_number_bg"/>
+
+        <EditText
+            android:id="@+id/item_code_iv7"
+            style="@style/license_plate_editStyle"
+            android:background="@drawable/car_number_bg"/>
+
+        <EditText
+            android:id="@+id/item_code_iv8"
+            style="@style/license_plate_editStyle"
+            android:background="@drawable/car_number_bg"/>
+
+    </LinearLayout>
+</FrameLayout>
